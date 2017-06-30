@@ -1,0 +1,332 @@
+/* 首页 */
+html {
+    background-size: cover;
+    height: 100%;
+}
+body{
+    overflow: hidden;
+}
+[jinkela-class="3"] {
+    position: absolute;
+    display: block;
+    left: -50%;
+    right: -50%;
+    margin: auto;
+}
+[jinkela-class="4"] {
+    background-color:rgba(0,0,0,.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+[jinkela-class="5"] {
+    background-color:rgba(0,0,0,.3);
+    position: relative;
+    height: 58px;
+    line-height: 58px;
+    padding: 0px;
+}
+.container {
+    width: 1100px;
+    margin: auto;
+    height: 58px;
+}
+[jinkela-class="6"] {
+    display: inline-block;
+    vertical-align: top;
+    background: url('../../images/logo.png');
+    background-size: cover;
+    width: 146px;
+    height: 32px;
+    margin-top: 18px;
+    margin-right: 124px;
+}
+[jinkela-class="7"]{
+    position: relative;
+}
+[jinkela-class="7"] .active{
+    display: block;
+    width: 100%;
+    background-color:#fed900;
+    position: absolute;
+    bottom: 0;
+    height: 6px;
+}
+[jinkela-class="7"]>.a-active{
+    color:#fed900;
+}
+[jinkela-class="8"] {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    list-style: none;
+}
+[jinkela-class="8"] li {
+    position: relative;
+    display: block;
+    float: left;
+    width: 103px;
+    text-align: center;
+    height: 58px;
+}
+.container>a{
+    float: right;
+    color: #ffffff;
+}
+
+[jinkela-class="8"] .active {
+    /*border-bottom: 6px solid #fed900;*/
+}
+
+[jinkela-class="8"]>li:hover{
+    /*border-bottom: 6px solid #fed900;*/
+}
+
+[jinkela-class="8"]>li>a {
+    color: #fff;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: 18px;
+    display: block;
+}
+[jinkela-class="11"] {
+    float: right;
+    color: #fff;
+    font-size: 14px;
+}
+[jinkela-class="11"] span {
+    height: 1em;
+    line-height: 1;
+    display: inline-block;
+}
+[jinkela-class="11"] a {
+    color: inherit;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+[jinkela-class="11"] span + span {
+    margin-left: .5em;
+    padding-left: .5em;
+    border-left: 2px solid #fff;
+}
+
+[jinkela-class="4"] main {
+    height: 343px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 5%;
+    margin: auto;
+    text-align: center;
+}
+[jinkela-class="4"] h1 {
+    margin: 0 auto 0px auto;
+    background: url('../../images/title.png');
+    background-size: cover;
+    width: 408px;
+    height: 192px;
+    margin-bottom: 56px;
+}
+[jinkela-class="9"] {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: auto;
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    box-shadow: 0px 6px 12px -10px #000;
+}
+
+[jinkela-class="9"] > [jinkela-class] {
+    height: 100%;
+    line-height: 34px;
+    border-right: 1px solid #eaeaea;
+    padding-right: 8px;
+    margin-right: 8px;
+}
+[jinkela-class="10"] a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    width: 5em;
+    text-align: center;
+}
+
+[jinkela-class="10"] ul {
+    position: absolute;
+    transition: visibility 200ms ease, opacity 200ms ease, transform 200ms ease;
+    -webkit-transition: visibility 200ms ease, opacity 200ms ease, transform 200ms ease;
+    transform: translateY(-20px) scale(0.8);
+    -webkit-transform: translateY(-20px) scale(0.8);
+    box-shadow: 0px 0px 12px -4px #000;
+    visibility: hidden;
+    opacity: 0;
+    top: 42px;
+    left: -16px;
+    right: 0;
+    background: #fff;
+    border-radius: 5px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+    padding: 0 8px;
+}
+
+[jinkela-class="10"] ul li {
+    text-align: center;
+    white-space: nowrap;
+}
+
+[jinkela-class="10"] a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    width: 5em;
+    text-align: center;
+}
+
+[jinkela-class="10"] {
+    display: inline-block;
+    color: #666;
+    position: relative;
+    text-align: left;
+}
+
+[jinkela-class="9"] > * {
+    float: left;
+}
+
+[jinkela-class="9"] input {
+    height: 100%;
+    padding: 0;
+    width: 410px;
+    height: 100%;
+    border: 0;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+[jinkela-class="9"] button {
+    height: inherit;
+    vertical-align: top;
+    font-size: 20px;
+    width: 152px;
+    border: 0;
+    margin: -8px -16px -8px 8px;
+    border-radius: 0 5px 5px 0;
+    background: #ffe401;
+    color: #000000;
+    cursor: pointer;
+}
+
+[jinkela-class="4"] main > ul {
+    margin: 26px auto 0 auto;
+    font-size: 16px;
+    padding: 0;
+}
+
+[jinkela-class="4"] main > ul > li {
+    display: inline-block;
+    border-left: 1px solid rgba(255,255,255,0.3);
+    padding-left: 14px;
+    margin-right: 14px;
+}
+
+[jinkela-class="4"] main > ul > li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+[jinkela-class="4"] main > ul > li:first-child {
+    border-left: 0;
+}
+
+.footer-bottom{
+    width: 100%;
+    height: 36px;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    line-height: 36px;
+    color: #b1b1b1;
+}
+
+.AJ-list {
+    display: none;
+    position: absolute;
+    /* width: 100%; */
+    background-color: #ffffff;
+    width: 426px;
+    text-align: left;
+    text-indent: 16px;
+    font-size: 16px;
+    /* color: #000000; */
+    left: 474px;
+    top: 299px;
+}
+
+.AJ-list li {
+    border-bottom: 1px solid #EFEFEF;
+    margin: 0 5px 0 5px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.AJ-list li a {
+    font-size: 14px;
+}
+.nav>.center{
+    width: 100%;
+    display: none;
+    position: absolute;
+    height: 136px;
+    top: 58px;
+    left: 0;
+    background: rgba(0,0, 0, .2);
+}
+.nav .center .two-list{
+    width: 1100px;
+    margin: 0 auto;
+
+}
+.nav .center .two-list li{
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    /*background-color:#fed900;*/
+}
+.nav .center .two-list li .three-list{
+    height: 136px;
+}
+.nav .center .two-list li .three-list li{
+    height: 34px;
+    line-height: 34px;
+}
+.nav .center .two-list li .angle{
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #fed900;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.nav .center .two-list li a{
+    color: #ffffff;
+}
+.nav .center .two-list>li:first-child{
+    padding-left: 274px;
+}
+
+

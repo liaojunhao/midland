@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="/stylesheets/social.css">
+
+</head>
+<body>
+<header>
+    <div class="container clearfix">
+        <div class="logo-black"></div>
+        <ul class="nav clearfix">
+            <li class="ser"><a href="/" title="首页">首页</a></li>
+            <li class="ser"><a href="/social/1/8" title="社会招聘" class="a-active">社会招聘</a></li>
+            <li class="ser"><a href="" title="校园招聘">校园招聘</a></li>
+            <li class="ser"><a href="" title="走进美联">走进美联</a></li>
+            <li class="ser"><a href="" title="福利薪酬">福利薪酬</a></li>
+            <li class="ser"><a href="" title="联系我们">联系我们</a></li>
+            <div class="center">
+                <ul class="two-list clearfix">
+                    <li>
+                        <span class="angle" style="display: none;"></span>
+                        <ul class="three-list">
+                            <li><a href="/">招聘图文</a></li>
+                            <li><a href="/">赞助活动</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="angle" style="display: none;"></span>
+                        <ul class="three-list">
+                            <li><a href="/">社招行程</a></li>
+                            <li><a href="/social/1/8">招聘岗位</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="angle" style="display: none;"></span>
+                        <ul class="three-list">
+                            <li><a href="/">校招行程</a></li>
+                            <li><a href="/">校招岗位</a></li>
+                            <li><a href="/">校招福利</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="angle" style="display: none;"></span>
+                        <ul class="three-list">
+                            <li><a href="/">公司介绍</a></li>
+                            <li><a href="/">公司历程</a></li>
+                            <li><a href="/">公司文化</a></li>
+                            <li><a href="/">企业培训</a></li>
+                            <li><a href="/">美联风采</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="angle" style="display: none;"></span>
+                        <ul class="three-list">
+                            <li><a href="/">福利薪酬</a></li>
+                            <li><a href="/">晋升机制</a></li>
+                            <li><a href="/">晋升福利</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </ul>
+        <%
+        if(!user){%>
+        <aside class="login">
+            <span><a target="_blank" href="/user/login">登录</a></span>
+            <span><a target="_blank" href="/user/reg">注册</a></span>
+        </aside>
+        <%}else{%>
+        <ul class="down">
+            <li>
+                <a href="/resume/<%=user._id%>" class="UserName"><%=user.username%></a>
+                <div class="nav-user-wrapper">
+                    <ul>
+                        <li><a href="/resume/<%=user._id%>" target="_blank">我的简历</a></li>
+                        <li><a href="/user/logout">退出</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <%}%>
+    </div>
+</header>
+<div class="banner">
+    <ul class="b-list clearfix">
+        <li><a href=""><img src="/images/banner1.jpg" alt=""></a></li>
+        <li><a href=""><img src="/images/banner2.jpg" alt=""></a></li>
+    </ul>
+    <ul class="num"></ul>
+</div>
+<main>
+    <div class="content clearfix">
+        <div class="box">
+            <div class="screen">
+                <div class="place">工作地点：
+                    <a href="javascript:;" datattr="">不限</a>
+                    <a href="javascript:;" datattr="深圳">深圳</a>
+                    <a href="javascript:;" datattr="北京">北京</a>
+                    <a href="javascript:;" datattr="广州">广州</a>
+                    <a href="javascript:;" datattr="成都">成都</a>
+                    <a href="javascript:;" datattr="重庆">重庆</a>
+                </div>
+                <div class="category">职位类别：
+                    <a href="javascript:;" datattr="">不限</a>
+                    <a href="javascript:;" datattr="开发">开发类</a>
+                    <a href="javascript:;" datattr="设计">设计类</a>
+                    <a href="javascript:;" datattr="销售">销售类</a>
+                    <a href="javascript:;" datattr="运维">运维类</a>
+                    <a href="javascript:;" datattr="产品">产品类</a>
+                    <a href="javascript:;" datattr="金融">金融类</a>
+                    <a href="javascript:;" datattr="职能">职能类</a>
+                </div>
+                <div class="grouping">工作分组：
+                    <a href="javascript:;" datattr="">不限</a>
+                    <a href="javascript:;" datattr="前线">前线组</a>
+                    <a href="javascript:;" datattr="后勤">后勤组</a>
+                </div>
+            </div>
+            <div class="list">
+                <h2 class="titleRise">
+                    <span>职位名称</span>
+                    <span>组别</span>
+                    <span>职业类别</span>
+                    <span>工作地点</span>
+                    <span>招聘人数</span>
+                    <span>时间</span>
+                </h2>
+                <ul id="accordion">
+                    <%articles.forEach(function(data){%>
+                    <li>
+                        <h3><span><%=data.name%></span>
+                            <span><%=data.group%></span>
+                            <span><%=data.category%></span>
+                            <span><%=data.place%></span>
+                            <span><%=data.num%></span>
+                            <span><%=data.time.toLocaleString()%></span>
+                        </h3>
+                        <div class="details">
+                            <h4>岗位职责1</h4>
+                            <p><%=data.Duty%></p>
+                            <h4>岗位要求</h4>
+                            <p><%=data.Ask%></p>
+                            <a href="/">投递简历</a>
+                        </div>
+                    </li>
+                    <%})%>
+
+                </ul>
+
+                <!--分页配置-->
+                <ul class="Flip">
+                    <div><a href="">上一页</a></div>
+                    <%for(var i=1;i<=totalPage;i++){%>
+                    <li class="<%= pageNum==i?'active':''%>"><a href="/social/<%=i%>/<%=pageSize%>"><%=i%></a></li>
+                    <%}%>
+                    <div><a href="">下一页</a></div>
+                </ul>
+
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="search">
+                <form action="" method="get">
+                    <input type="text" placeholder="搜索职位">
+                    <button type="submit" class="btn btn-default">搜</button>
+                </form>
+            </div>
+            <div class="recommend">
+                <h2>热门招聘职位</h2>
+                <ul>
+                    <li><a href=""><span>Android开发工程师</span><span>2016-09-22</span></a></li>
+                    <li><a href=""><span>Android开发工程师</span><span>2016-09-22</span></a></li>
+                    <li><a href=""><span>Android开发工程师</span><span>2016-09-22</span></a></li>
+                    <li><a href=""><span>Android开发工程师</span><span>2016-09-22</span></a></li>
+                    <li><a href=""><span>Android开发工程师</span><span>2016-09-22</span></a></li>
+                    <li><a href=""><span>Android开发工程师</span><span>2016-09-22</span></a></li>
+                    <li><a href=""><span>Android开发工程师</span><span>2016-09-22</span></a></li>
+                </ul>
+                <div class="topic"><img src="" alt=""></div>
+                <div class="topic"><img src="" alt=""></div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="content clearfix">
+        <div class="logo"><img src="/images/logo_50.png" alt="美联物业"></div>
+        <div class="copy">© 2016 www.1200.com.cn 粤ICP备11015476号 京公网安备110105013401号 京ICP证110318号<br>
+            新出网证(京)字242号 全国统一客服电话：4006-345-678
+        </div>
+        <div class="bottom-nav">
+            <a href="http://www.1200.com.cn/" title="美联物业">美联官网</a>
+            <a href="">公司介绍</a>
+            <a href="">免责声明</a>
+            <a href="">私隐政策</a>
+            <a href="">联系我们</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+<script type="text/javascript" src="/lib/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/javascripts/social/head.js"></script>
+<script type="text/javascript" src="/javascripts/Pulgs/myBanner.js"></script>
+</html>

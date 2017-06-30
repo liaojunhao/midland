@@ -1,0 +1,166 @@
+@import "PublicStyle/PublicStyle";
+
+body{
+  background-color: white;
+}
+.content{
+  width: 900px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 680px;
+  .borderRadius(12px);
+  h3{
+    position: absolute;
+    right: 18px;
+    top:-35px;
+    font-size: @font18;
+    font-weight: normal;
+  }
+  h2{
+    text-align: left;
+    text-indent: 24px;
+    line-height: 60px;
+    height: 60px;
+    background-color: @midland;
+    .borderRadius(12px 12px 0 0);
+    .link-edit{
+      width: 100px;
+      height: 40px;
+      background-color: @fontBlcrk;
+      text-align: center;
+      line-height: 40px;
+      display: block;
+      position: absolute;
+      right: 10px;
+      color: @midland;
+      top: 10px;
+      text-indent: 0;
+      font-weight: normal;
+      .borderRadius(6px);
+    }
+  }
+  #resumeedit_Base_info{
+    border: 1px solid #f2f2f2;
+    height: 620px;
+    background-color: #fafafa;
+    .borderRadius(0 0 12px 12px);
+    .center{
+      height: 400px;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      p{
+        width: 400px;
+        margin: 0 auto;
+        height: 42px;
+        line-height: 42px;
+        span:first-child{
+          text-align: right;
+          height: 42px;
+          line-height: 42px;
+          width: 120px;
+          display: inline-block;
+          margin-right: 10px;
+        }
+      }
+    }
+
+  }
+  #resumeedit_Base_edit{
+    border: 1px solid #f2f2f2;
+    height: 620px;
+    background-color: #fafafa;
+    .borderRadius(0 0 12px 12px);
+    .center{
+      height: 530px;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 480px;
+      .resume{
+        .formRow{
+          margin-bottom: 16px;
+          position: relative;
+          .form-label{
+            width: 120px;
+            float: left;
+            cursor: text;
+            text-align: right;
+            display: block;
+            color: #666;
+            height: 40px;
+            line-height: 40px;
+            font-size: @font14;
+            .c-ff8600{
+              color: red;
+            }
+          }
+          .formControls{
+            height: 40px;
+            line-height: 40px;
+            .ml-40{
+              margin-left: 20px;
+            }
+          }
+          .formControls{
+            margin-left: 130px;
+            position: relative;
+            .btn{
+              display: inline-block;
+              padding: 0px 20px;
+              height: 30px;
+              cursor: pointer;
+              font-size: 14px;
+              text-align: center;
+              white-space: nowrap;
+              vertical-align: middle;
+              border: 1px solid #d0d0d0;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              -o-user-select: none;
+              user-select: none;
+              .borderRadius(4px);
+              background-color: rgba(0,0,0,0);
+            }
+            .btn-primary{
+              background: #ffd100;
+              border-color: #ffd100;
+              color: #444;
+            }
+            .btn-primary:hover{
+              color:#444;
+              background-color:#ffe366;
+              border-color:#ffe366;
+            }
+            .btn-default:hover{
+              border:solid 1px #999;
+              background-color:transparent;
+              color:#444
+            }
+            .ml-10{
+              margin-left: 10px;
+            }
+            .input-text{
+              padding: 0 10px;
+              height: 36px;
+              width: 280px;
+              .borderRadius(4px);
+              border: solid 1px #d0d0d0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

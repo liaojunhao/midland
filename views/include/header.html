@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="/stylesheets/header.css">
+<header>
+    <div class="container clearfix">
+        <div class="logo-black"></div>
+        <ul class="nav clearfix">
+            <li class="ser"><a href="/" title="首页">首页</a></li>
+            <li class="ser"><a href="/social/1/8" title="social">社会招聘</a></li>
+            <li class="ser"><a href="" title="school">校园招聘</a></li>
+            <li class="ser"><a href="/about" title="about">走进美联</a></li>
+            <li class="ser"><a href="" title="welfare">福利薪酬</a></li>
+            <li class="ser"><a href="" title="contact">联系我们</a></li>
+            <div class="center">
+                <ul class="two-list clearfix">
+                    <li>
+                        <span class="angle" style="display: none;"></span>
+                        <ul class="three-list">
+                            <li><a href="/">招聘图文</a></li>
+                            <li><a href="/">赞助活动</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="angle" style="display: none;"></span>
+                        <ul class="three-list">
+                            <li><a href="/">社招行程</a></li>
+                            <li><a href="/social/1/8">招聘岗位</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="angle" style="display: none;"></span>
+                        <ul class="three-list">
+                            <li><a href="/">校招行程</a></li>
+                            <li><a href="/">校招岗位</a></li>
+                            <li><a href="/">校招福利</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="angle" style="display: none;"></span>
+                        <ul class="three-list">
+                            <li><a href="/about">公司介绍</a></li>
+                            <li><a href="/">公司历程</a></li>
+                            <li><a href="/">公司文化</a></li>
+                            <li><a href="/">企业培训</a></li>
+                            <li><a href="/">美联风采</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="angle" style="display: none;"></span>
+                        <ul class="three-list">
+                            <li><a href="/">福利薪酬</a></li>
+                            <li><a href="/">晋升机制</a></li>
+                            <li><a href="/">晋升福利</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </ul>
+        <%
+        if(!user){%>
+        <aside class="login">
+            <span><a target="_blank" href="/user/login">登录</a></span>
+            <span><a target="_blank" href="/user/reg">注册</a></span>
+        </aside>
+        <%}else{%>
+        <ul class="down">
+            <li>
+                <a href="/resume/<%=user._id%>" class="UserName"><%=user.username%></a>
+                <div class="nav-user-wrapper">
+                    <ul>
+                        <li><a href="/resume/<%=user._id%>" target="_blank">我的简历</a></li>
+                        <li><a href="/user/logout">退出</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <%}%>
+    </div>
+</header>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="stylesheets/reset.css">
+
+    <link rel="stylesheet" href="stylesheets/indexStyle/index.css">
+</head>
+<body>
+    <video src="video/background.9bca64.mp4" id="vid" autoplay="true" loop="" width="1080" height="608" jinkela-class="3"></video>
+    <div jinkela-class="4">
+        <header jinkela-class="5">
+            <div class="container">
+                <div jinkela-class="6"></div>
+                <ul jinkela-class="8" class="nav clearfix">
+                    <li jinkela-class="7">
+                        <a href="/" title="首页" class="a-active">首页</a>
+                    </li>
+                    <li class="undefined" jinkela-class="7"><a href="/social/1/8" title="社会招聘">社会招聘</a></li>
+                    <li class="undefined" jinkela-class="7"><a href="" title="校园招聘">校园招聘</a></li>
+                    <li class="undefined" jinkela-class="7"><a href="" title="福利薪酬">福利薪酬</a></li>
+                    <li class="undefined" jinkela-class="7"><a href="" title="走进美联">走进美联</a></li>
+                    <li class="undefined" jinkela-class="7"><a href="" title="联系我们">联系我们</a></li>
+                    <div class="center">
+                        <ul class="two-list">
+                            <li></li>
+                            <li>
+                                <span class="angle" style="display: none;"></span>
+                                <ul class="three-list">
+                                    <li><a href="/">公司介绍</a></li>
+                                    <li><a href="/">公司历程</a></li>
+                                    <li><a href="/">晋升福利</a></li>
+                                    <li><a href="/">联系我们</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="angle" style="display: none;"></span>
+                                <ul class="three-list">
+                                    <li><a href="/">社招行程</a></li>
+                                    <li><a href="/">招聘岗位</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="angle" style="display: none;"></span>
+                                <ul class="three-list">
+                                    <li><a href="/">校招行程</a></li>
+                                    <li><a href="/">校招岗位</a></li>
+                                    <li><a href="/">校招福利</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="angle" style="display: none;"></span>
+                                <ul class="three-list">
+                                    <li><a href="/">公司介绍</a></li>
+                                    <li><a href="/">公司历程</a></li>
+                                    <li><a href="/">企业文化</a></li>
+                                    <li><a href="/">企业培训</a></li>
+                                    <li><a href="/">美联风采</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="angle" style="display: none;"></span>
+                                <ul class="three-list">
+                                    <li><a href="/">社招行程</a></li>
+                                    <li><a href="/">招聘岗位</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+                <%
+                if(!user){%>
+                <aside jinkela-class="11">
+                    <span><a target="_blank" href="/user/login">登录</a></span>
+                    <span><a target="_blank" href="/user/reg">注册</a></span>
+                </aside>
+                <%}else{%>
+                <a href="/resume/<%=user._id%>"><%=user.username%></a>
+                <%}%>
+
+            </div>
+        </header>
+        <main>
+            <h1 title="美联招聘"></h1>
+            <div jinkela-class="9">
+                <div jinkela-class="10">
+                    <a href="JavaScript:" ref="a">社会招聘</a>
+                    <ul class="" ref="ul">
+                        <li><a href="JavaScript:">社会招聘</a></li>
+                        <li><a href="JavaScript:">校园招聘</a></li>
+                    </ul>
+                </div>
+                <input type="text" name="search" id="search">
+                <button type="button">搜索职位</button>
+                <ul class="AJ-list">
+
+                </ul>
+            </div>
+            <ul ref="list">
+                <li class="undefined" jinkela-class="7"><a href="/social/1/8?city=&gory=开发&group=" title="技术类">开发类</a></li>
+                <li class="undefined" jinkela-class="7"><a href="/jobs/#category=b" title="产品类">设计类</a></li>
+                <li class="undefined" jinkela-class="7"><a href="/jobs/#category=c" title="设计类">销售类</a></li>
+                <li class="undefined" jinkela-class="7"><a href="/jobs/#category=d" title="市场类">运维类</a></li>
+                <li class="undefined" jinkela-class="7"><a href="/jobs/#category=e" title="职能类">产品类</a></li>
+                <li class="undefined" jinkela-class="7"><a href="/jobs/#category=f" title="物流类">职能类</a></li>
+                <li class="undefined" jinkela-class="7"><a href="/jobs/#category=g" title="客服类">金融类</a></li>
+            </ul>
+        </main>
+        <footer class="footer-bottom">
+            美联集团 Copyright © 2016 版权所有
+        </footer>
+    </div>
+    <script type="text/javascript" src="/lib/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/javascripts/index.js"></script>
+</body>
+</html>

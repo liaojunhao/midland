@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="/stylesheets/resume.css">
+</head>
+<body>
+
+<div class="content">
+    <h3><a href="/social/1/8">返回</a></h3>
+    <h2><%=user.username%>的<%=title%><a href="javascript:;" class="link-edit">编辑</a></h2>
+    <div id="resumeedit_Base_info" style="display: block">
+        <%if(sumeData){%>
+            <div class="center">
+                <p><span>真实姓名：</span><span><%=sumeData.name%></span></p>
+                <p><span>性别：</span><span><%=sumeData.gender%></span></p>
+                <p><span>出生日期：</span><span><%=birthdayTime%></span></p>
+                <p><span>参加工作时间：</span><span><%=fromTime%></span></p>
+                <p><span>所在城市：</span><span><%=sumeData.address_city%></span></p>
+                <p><span>婚姻：</span><span><%=sumeData.marital_status%></span></p>
+                <p><span>手机：</span><span><%=sumeData.mobile%></span></p>
+                <p><span>邮箱：</span><span><%=sumeData.email%></span></p>
+                <p><span>QQ：</span><span><%=sumeData.qq%></span></p>
+            </div>
+        <%}else{%>
+            <div class="center">
+                <p><span>真实姓名：</span><span><%=state%></span></p>
+                <p><span>性别：</span><span><%=state%></span></p>
+                <p><span>出生日期：</span><span><%=state%></span></p>
+                <p><span>参加工作时间：</span><span><%=state%></span></p>
+                <p><span>所在城市：</span><span><%=state%></span></p>
+                <p><span>婚姻：</span><span><%=state%></span></p>
+                <p><span>手机：</span><span><%=state%></span></p>
+                <p><span>邮箱：</span><span><%=state%></span></p>
+                <p><span>QQ：</span><span><%=state%></span></p>
+            </div>
+        <%}%>
+    </div>
+    <div id="resumeedit_Base_edit" style="display: none">
+        <div class="center">
+            <form method="post" class="resume" id="form_resumeedit">
+                <div class="formRow clearfix">
+                    <label class="form-label">
+                        <span class="c-ff8600">*</span> 真实姓名：
+                    </label>
+                    <div class="formControls">
+                        <input type="text" class="input-text" value="" placeholder="<%=sumeData.name%>" name="name" id="name" datatype="*" nullmsg="必填"><span class="Validform_checktip Validform_right"></span>
+                    </div>
+                </div>
+                <div class="formRow clearfix">
+                    <label class="form-label">
+                        <span class="c-ff8600">*</span> 性别：
+                    </label>
+                    <div class="formControls">
+                        <label>
+                            <input name="gender" type="radio" value="男" checked="" datatype="*" nullmsg="必填"> 男
+                        </label>
+                        <label class="ml-40"><input type="radio" name="gender" value="女"> 女</label>
+                    </div>
+                </div>
+                <div class="formRow clearfix">
+                    <label class="form-label">
+                        <span class="c-ff8600">*</span> 出生日期：
+                    </label>
+                    <div class="formControls">
+                        <input type="text" class="input-text" value="" placeholder="<%=birthdayTime%>" name="birthday" id="birthday" datatype="*" nullmsg="必填"><span class="Validform_checktip Validform_right"></span>
+                    </div>
+                </div>
+                <div class="formRow clearfix">
+                    <label class="form-label">
+                        <span class="c-ff8600">*</span> 参加工作时间：
+                    </label>
+                    <div class="formControls">
+                        <input type="text" class="input-text" value="" placeholder="<%=fromTime%>" name="work_from_param" id="work_from" datatype="*" nullmsg="必填"><span class="Validform_checktip Validform_right"></span>
+                    </div>
+                </div>
+                <div class="formRow clearfix">
+                    <label class="form-label">
+                        <span class="c-ff8600">*</span> 所属城市：
+                    </label>
+                    <div class="formControls">
+                        <input type="text" class="input-text" value="" placeholder="<%=sumeData.address_city%>" name="address_city" id="address_city" datatype="*" nullmsg="必填"><span class="Validform_checktip Validform_right"></span>
+                    </div>
+                </div>
+                <div class="formRow clearfix">
+                    <label class="form-label">
+                        <span class="c-ff8600">*</span> 婚姻：
+                    </label>
+                    <div class="formControls">
+                        <label>
+                            <input name="marital_status" type="radio" value="1" checked="" datatype="*" nullmsg="必填"> 未婚
+                        </label>
+                        <label class="ml-40"><input type="radio" name="marital_status" value="2"> 已婚</label>
+                    </div>
+                </div>
+                <div class="formRow clearfix">
+                    <label class="form-label">
+                        <span class="c-ff8600">*</span> 手机号：
+                    </label>
+                    <div class="formControls">
+                        <input type="text" class="input-text" value="" placeholder="<%=sumeData.mobile%>" name="mobile" id="mobile" datatype="*" nullmsg="必填"><span class="Validform_checktip Validform_right"></span>
+                    </div>
+                </div>
+                <div class="formRow clearfix">
+                    <label class="form-label">
+                        <span class="c-ff8600">*</span> 邮箱：
+                    </label>
+                    <div class="formControls">
+                        <input type="text" class="input-text" value="" placeholder="<%=sumeData.email%>" name="email" id="email" datatype="*" nullmsg="必填"><span class="Validform_checktip Validform_right"></span>
+                    </div>
+                </div>
+                <div class="formRow clearfix">
+                    <label class="form-label">
+                        <span class="c-ff8600">*</span> QQ：
+                    </label>
+                    <div class="formControls">
+                        <input type="text" class="input-text" value="" placeholder="<%=sumeData.qq%>" name="qq" id="qq" datatype="*" nullmsg="必填"><span class="Validform_checktip Validform_right"></span>
+                    </div>
+                </div>
+                <div class="formRow clearfix">
+                    <div class="formControls">
+                        <input type="submit" class="btn btn-primary" id="resumebasicbutton" value="提交">
+                        <input type="button" class="btn btn-default ml-10" value="取消">
+                    </div>
+                </div>
+
+        </form>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/lib/jquery/dist/jquery.js"></script>
+<!--<script type="text/javascript" src="/javascripts/resume/resume.js"></script>-->
+<script type="text/javascript">
+    $(function () {
+        $('.btn-default').on('click', function () {
+            $('#resumeedit_Base_edit').css({display:'none'});
+            $('#resumeedit_Base_info').css({display:'block'});
+        })
+
+        $('.link-edit').on('click', function () {
+            $('#resumeedit_Base_edit').css({display:'block'});
+            $('#resumeedit_Base_info').css({display:'none'});
+        })
+    })
+</script>
+</body>
+</html>

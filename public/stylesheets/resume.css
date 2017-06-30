@@ -1,0 +1,189 @@
+body {
+  background-color: white;
+}
+.content {
+  width: 900px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 680px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+}
+.content h3 {
+  position: absolute;
+  right: 18px;
+  top: -35px;
+  font-size: 18px;
+  font-weight: normal;
+}
+.content h2 {
+  text-align: left;
+  text-indent: 24px;
+  line-height: 60px;
+  height: 60px;
+  background-color: #fed900;
+  -webkit-border-radius: 12px 12px 0 0;
+  -moz-border-radius: 12px 12px 0 0;
+  -ms-border-radius: 12px 12px 0 0;
+  -o-border-radius: 12px 12px 0 0;
+  border-radius: 12px 12px 0 0;
+}
+.content h2 .link-edit {
+  width: 100px;
+  height: 40px;
+  background-color: #3b3b3b;
+  text-align: center;
+  line-height: 40px;
+  display: block;
+  position: absolute;
+  right: 10px;
+  color: #fed900;
+  top: 10px;
+  text-indent: 0;
+  font-weight: normal;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+.content #resumeedit_Base_info {
+  border: 1px solid #f2f2f2;
+  height: 620px;
+  background-color: #fafafa;
+  -webkit-border-radius: 0 0 12px 12px;
+  -moz-border-radius: 0 0 12px 12px;
+  -ms-border-radius: 0 0 12px 12px;
+  -o-border-radius: 0 0 12px 12px;
+  border-radius: 0 0 12px 12px;
+}
+.content #resumeedit_Base_info .center {
+  height: 400px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.content #resumeedit_Base_info .center p {
+  width: 400px;
+  margin: 0 auto;
+  height: 42px;
+  line-height: 42px;
+}
+.content #resumeedit_Base_info .center p span:first-child {
+  text-align: right;
+  height: 42px;
+  line-height: 42px;
+  width: 120px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.content #resumeedit_Base_edit {
+  border: 1px solid #f2f2f2;
+  height: 620px;
+  background-color: #fafafa;
+  -webkit-border-radius: 0 0 12px 12px;
+  -moz-border-radius: 0 0 12px 12px;
+  -ms-border-radius: 0 0 12px 12px;
+  -o-border-radius: 0 0 12px 12px;
+  border-radius: 0 0 12px 12px;
+}
+.content #resumeedit_Base_edit .center {
+  height: 530px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 480px;
+}
+.content #resumeedit_Base_edit .center .resume .formRow {
+  margin-bottom: 16px;
+  position: relative;
+}
+.content #resumeedit_Base_edit .center .resume .formRow .form-label {
+  width: 120px;
+  float: left;
+  cursor: text;
+  text-align: right;
+  display: block;
+  color: #666;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+}
+.content #resumeedit_Base_edit .center .resume .formRow .form-label .c-ff8600 {
+  color: red;
+}
+.content #resumeedit_Base_edit .center .resume .formRow .formControls {
+  height: 40px;
+  line-height: 40px;
+}
+.content #resumeedit_Base_edit .center .resume .formRow .formControls .ml-40 {
+  margin-left: 20px;
+}
+.content #resumeedit_Base_edit .center .resume .formRow .formControls {
+  margin-left: 130px;
+  position: relative;
+}
+.content #resumeedit_Base_edit .center .resume .formRow .formControls .btn {
+  display: inline-block;
+  padding: 0px 20px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid #d0d0d0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.content #resumeedit_Base_edit .center .resume .formRow .formControls .btn-primary {
+  background: #ffd100;
+  border-color: #ffd100;
+  color: #444;
+}
+.content #resumeedit_Base_edit .center .resume .formRow .formControls .btn-primary:hover {
+  color: #444;
+  background-color: #ffe366;
+  border-color: #ffe366;
+}
+.content #resumeedit_Base_edit .center .resume .formRow .formControls .btn-default:hover {
+  border: solid 1px #999;
+  background-color: transparent;
+  color: #444;
+}
+.content #resumeedit_Base_edit .center .resume .formRow .formControls .ml-10 {
+  margin-left: 10px;
+}
+.content #resumeedit_Base_edit .center .resume .formRow .formControls .input-text {
+  padding: 0 10px;
+  height: 36px;
+  width: 280px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border: solid 1px #d0d0d0;
+}

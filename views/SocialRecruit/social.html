@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="/stylesheets/social.css">
+
+</head>
+<body>
+<%include ../include/header.html%>
+<div class="banner">
+    <ul class="b-list clearfix">
+        <li><a href=""><img src="/images/banner1.jpg" alt=""></a></li>
+        <li><a href=""><img src="/images/banner2.jpg" alt=""></a></li>
+    </ul>
+    <ul class="num"></ul>
+</div>
+<main>
+    <div class="content clearfix">
+        <div class="box">
+            <div class="screen">
+                <div class="place">工作地点：
+                    <a href="javascript:;" datattr="">不限</a>
+                    <a href="javascript:;" datattr="深圳">深圳</a>
+                    <a href="javascript:;" datattr="北京">北京</a>
+                    <a href="javascript:;" datattr="广州">广州</a>
+                    <a href="javascript:;" datattr="成都">成都</a>
+                    <a href="javascript:;" datattr="重庆">重庆</a>
+                </div>
+                <div class="category">职位类别：
+                    <a href="javascript:;" datattr="">不限</a>
+                    <a href="javascript:;" datattr="开发">开发类</a>
+                    <a href="javascript:;" datattr="设计">设计类</a>
+                    <a href="javascript:;" datattr="销售">销售类</a>
+                    <a href="javascript:;" datattr="运维">运维类</a>
+                    <a href="javascript:;" datattr="产品">产品类</a>
+                    <a href="javascript:;" datattr="金融">金融类</a>
+                    <a href="javascript:;" datattr="职能">职能类</a>
+                </div>
+                <div class="grouping">工作分组：
+                    <a href="javascript:;" datattr="">不限</a>
+                    <a href="javascript:;" datattr="前线">前线组</a>
+                    <a href="javascript:;" datattr="后勤">后勤组</a>
+                </div>
+            </div>
+            <div class="list">
+                <h2 class="titleRise">
+                    <span>职位名称</span>
+                    <span>组别</span>
+                    <span>职业类别</span>
+                    <span>工作地点</span>
+                    <span>招聘人数</span>
+                    <span>时间</span>
+                </h2>
+                <ul id="accordion">
+                    <%articles.forEach(function(data){%>
+                    <li>
+                        <h3><span><%=data.name%></span>
+                            <span><%=data.group%></span>
+                            <span><%=data.category%></span>
+                            <span><%=data.place%></span>
+                            <span><%=data.num%></span>
+                            <span><%=data.time.toLocaleString()%></span>
+                        </h3>
+                        <div class="details">
+                            <h4>岗位职责1</h4>
+                            <p><%=data.Duty%></p>
+                            <h4>岗位要求</h4>
+                            <p><%=data.Ask%></p>
+                            <a href="/" class="tou">投递简历</a>
+                        </div>
+                    </li>
+                    <%})%>
+
+                </ul>
+
+                <!--分页配置-->
+                <ul class="Flip">
+                    <%if(pageNum>1){%>
+                        <div><a href="/social/<%=pageNum-1%>/<%=pageSize%>">上一页</a></div>
+                    <%}%>
+
+                    <%for(var i=1;i<=totalPage;i++){%>
+                    <li class="<%= pageNum==i?'active':''%>"><a href="/social/<%=i%>/<%=pageSize%>"><%=i%></a></li>
+                    <%}%>
+
+                    <%if(pageNum<totalPage){%>
+                    <div><a href="/social/<%=pageNum+1%>/<%=pageSize%>">下一页</a></div>
+                    <%}%>
+                </ul>
+
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="search">
+                <form action="" method="get">
+                    <input type="text" placeholder="搜索职位">
+                    <button type="submit" class="btn btn-default">搜</button>
+                </form>
+            </div>
+            <div class="recommend">
+                <h2>热门招聘职位</h2>
+                <ul>
+                    <li><a href=""><span>Android开发工程师</span><span>2016-09-22</span></a></li>
+                    <li><a href=""><span>Android开发工程师</span><span>2016-09-22</span></a></li>
+                    <li><a href=""><span>Android开发工程师</span><span>2016-09-22</span></a></li>
+                    <li><a href=""><span>Android开发工程师</span><span>2016-09-22</span></a></li>
+                    <li><a href=""><span>Android开发工程师</span><span>2016-09-22</span></a></li>
+                    <li><a href=""><span>Android开发工程师</span><span>2016-09-22</span></a></li>
+                    <li><a href=""><span>Android开发工程师</span><span>2016-09-22</span></a></li>
+                </ul>
+                <div class="topic"><img src="" alt=""></div>
+                <div class="topic"><img src="" alt=""></div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%include ../include/footer.html%>
+</body>
+
+<script type="text/javascript" src="/lib/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/javascripts/Pulgs/myBanner.js"></script>
+<script type="text/javascript" src="/javascripts/PublicJS.js"></script>
+<script type="text/javascript" src="/javascripts/social/social.js"></script>
+
+</html>
