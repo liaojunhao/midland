@@ -6,13 +6,14 @@ let cookieParser = require('cookie-parser');//解析cookie中间件 req.cookies
 let bodyParser = require('body-parser');//解析请求体 req.body
 let settings = require('./settings');
 
-
-let index = require('./routes/index');//主页路由
-let user = require('./routes/user');//用户页路由
-let social = require('./routes/social');//职位列表路由
-let resu = require('./routes/resume');//简历路由
-let Release = require('./routes/Release');//发布职位路由
-let about = require('./routes/about');//公司介绍路由
+let index = require('./routes/index');      // 主页路由
+let user = require('./routes/user');        // 用户页路由
+let social = require('./routes/social');    // 职位列表路由
+let resume = require('./routes/resume');      // 简历路由
+let Release = require('./routes/Release');  // 发布职位路由
+let about = require('./routes/about');      // 公司介绍路由
+let welfare = require('./routes/welfare');  // 福利薪酬路由
+let contact = require('./routes/contact');  // 联系我们路由
 
 let db = require('./db')//引入数据库操作模块
 
@@ -24,7 +25,6 @@ app.set('views', path.join(__dirname, 'views'));
 //设置模板引擎
 app.set('view engine', 'html');
 app.engine('html',require('ejs').__express);
-
 
 // 如果 /public 目录下面有favicon.ico收藏夹图标就显示下面这条
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -38,7 +38,6 @@ app.use(express.static(path.join(__dirname, 'public')));//处理静态文件
 let session = require('express-session');
 let MongoStore = require('connect-mongo')(session);
 let flash = require('connect-flash');
-
 
 //使用会话中间件
 app.use(session({
@@ -59,21 +58,14 @@ app.use(function(req,res,next){
     next();
 });
 
-app.use('/', index);//指定首页路由
-app.use('/user', user);//指定用户路由
-app.use('/social', social);//指定职位列表路由
-app.use('/resume', resu);//指定简历路由
-app.use('/Release', Release);//指定发布简历路由
-app.use('/about', about);//指定关于我们路由
-
-
-
-
-
-
-
-
-
+app.use('/', index);            // 指定首页路由
+app.use('/user', user);         // 指定用户路由
+app.use('/social', social);     // 指定职位列表路由
+app.use('/resume', resume);     // 指定简历路由
+app.use('/Release', Release);   // 指定发布简历路由
+app.use('/about', about);       // 指定关于我们路由
+app.use('/welfare', welfare);   // 指定关于我们路由
+app.use('/contact',contact)     // 指定联系我们路由
 
 // 返回404错误页面
 app.use(function(req, res, next) {
