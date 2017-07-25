@@ -3,7 +3,7 @@
 
 在初期接到这个项目的时候，感觉实现的逻辑并不是特别的复杂，加上公司人力有限，想着自己用nodejs去单独开发这一套网站。因为初学的nodejs，项目中有很多不成熟的地方，还望大家多多指教
 
-在做技术选型的时候，我对vue、React框架还不是很成熟，项目也是催的比较着急，所以确定还是采用传统的MVC架构的方式去开发网站。多页面应用，前端还是用html+css+jQuery传统的方式去搭建，网站还大量采用了自己写的基于jQuery开发的插件库 jQueryPlug：<https://github.com/liaojunhao/jQueryPlug>，后台用nodejs环境，express开发框架，数据库方面用的是mongodb，而且会大量使用es6/7的语法，模板引擎用nodejs自带的ejs。
+在做技术选型的时候，我对vue、React框架还不是很成熟，项目也是催的比较着急，所以确定还是采用传统的MVC架构的方式去开发网站。多页面应用，前端还是用html+css+jQuery传统的方式去搭建，网站还大量采用了自己写的基于jQuery开发的插件库 jQueryPlugin：<https://github.com/liaojunhao/jQueryPlugin>，后台用nodejs环境，express开发框架，数据库方面用的是mongodb，而且会大量使用es6/7的语法，模板引擎用nodejs自带的ejs。
 
 由于后台系统不是我这边开发，所以我只需要负责构建出前端页面就可以，现在的后台接口都用nodejs开发的临时接口，都是mock数据，后期等后台接口都发开完之后会改成用ajax开读取数据。
 
