@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="/stylesheets/aboutStyle/culture.css">
+</head>
+<body>
+<%include ../include/header.html%>
+<div class="banner">
+    <ul class="b-list clearfix">
+        <li><a href=""><img src="/images/banner1.jpg" alt=""></a></li>
+        <li><a href=""><img src="/images/banner2.jpg" alt=""></a></li>
+    </ul>
+    <ul class="num"></ul>
+</div>
+<main class="clearfix" id="app">
+    <!--左侧导航组件-->
+    <div class="LeftNav">
+        <dl>
+            <dt>
+                <img src="/images/about-ICON.png" alt="关于美联">
+                <h2>关于美联</h2>
+                <span>ABOUT MIDLAND</span>
+            </dt>
+            <dd><a href="/about">公司介绍</a></dd>
+            <dd><a href="/about/course">公司历程</a></dd>
+            <dd class="active"><a href="/about/culture">企业文化</a></dd>
+            <dd><a href="">企业培训</a></dd>
+            <dd><a href="">美联风采</a></dd>
+        </dl>
+    </div>
+    <!--点击导航切换内容-->
+    <div class="abContent">
+        <!--<router-view></router-view>-->
+        <div class="title clearfix">
+            <h2><%=title%></h2>
+            <span>Company Culture</span>
+        </div>
+        <img src="/images/culturn_bg.jpg" alt="美联物业">
+        <img src="/images/culturn_bg2.jpg" alt="美联物业">
+
+    </div>
+
+</main>
+
+<%include ../include/footer.html%>
+<script type="text/javascript" src="/lib/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/javascripts/Pulgs/myBanner.js"></script>
+<script type="text/javascript" src="/javascripts/PublicJS.js"></script>
+</body>
+</html>

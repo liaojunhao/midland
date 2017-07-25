@@ -98,25 +98,38 @@ main{
   .abContent{
     float: right;
     background-color: white;
-    height: 800px;
-    width: 820px;
+    width: 740px;
     .borderRadius(6px);
-    &>img{
-      display: block;
-      margin: 0 auto;
-    }
+    padding: 0 40px 40px 40px;
     .title{
       line-height: 76px;
       height: 76px;
       border-bottom: 1px solid #eeeeee;
-      margin: 0 40px;
       &>h2{
         float: left;
+        font-size: 22px;
+        color: #3b3b3b;
+        font-weight: normal;
       }
       &>span{
         float: left;
+        font-size: 16px;
+        color: #a4a3a0;
+        margin-left: 10px;
       }
     }
-
+    &>img{
+      width: 100%;
+    }
+    &>img:first-of-type{
+      margin-top: 40px;
+    }
+    .tit{
+      text-align: center;
+      line-height: 36px;
+      height: 36px;
+      font-size: 18px;
+      margin-top: 20px;
+    }
   }
 }

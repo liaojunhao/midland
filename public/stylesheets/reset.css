@@ -13,7 +13,9 @@ th, td {
 body {
     font-size: 12px;
     font-style: normal;
-    font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+    SimSun, sans-serif;
 }
 /*字体太小不适合阅读,我们让small的字体恢复12px*/
 small {

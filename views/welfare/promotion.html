@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="/stylesheets/welfareStyle/mechanism.css">
+</head>
+<body>
+<%include ../include/header.html%>
+<div class="banner">
+    <ul class="b-list clearfix">
+        <li><a href=""><img src="/images/banner1.jpg" alt=""></a></li>
+        <li><a href=""><img src="/images/banner2.jpg" alt=""></a></li>
+    </ul>
+    <ul class="num"></ul>
+</div>
+<main class="clearfix" id="app">
+    <!--左侧导航组件-->
+    <div class="LeftNav">
+        <dl>
+            <dt>
+                <img src="/images/about-ICON.png" alt="关于美联">
+                <h2>美联福利</h2>
+                <span>ABOUT MIDLAND</span>
+            </dt>
+            <dd><a href="/welfare">福利薪酬</a></dd>
+            <dd class="active"><a href="/welfare/mechanism">晋升机制</a></dd>
+            <dd><a href="/">晋升福利</a></dd>
+        </dl>
+    </div>
+    <!--点击导航切换内容-->
+    <div class="abContent">
+        <!--<router-view></router-view>-->
+        <div class="title clearfix">
+            <h2><%=title%></h2>
+            <span>Promotion</span>
+        </div>
+        <ul class="screen clearfix">
+            <li class="active">前线组</li>
+            <li>后勤组</li>
+        </ul>
+        <div class="images">
+            <img src="/images/mechanism.jpg" alt="">
+        </div>
+
+    </div>
+
+</main>
+<%include ../include/footer.html%>
+<script type="text/javascript" src="/lib/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/javascripts/Pulgs/myBanner.js"></script>
+<script type="text/javascript" src="/javascripts/PublicJS.js"></script>
+
+</body>
+</html>
