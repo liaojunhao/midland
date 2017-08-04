@@ -61,10 +61,6 @@ router.post('/', function (req, res) {
 
 });
 
-
-
-
-
 /*
 * 投递简历路由
 * */

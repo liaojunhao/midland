@@ -1,0 +1,165 @@
+body {
+  background-color: #f5f5f5;
+}
+header {
+  background-color: white;
+}
+.banner {
+  width: 100%;
+  height: 166px;
+  overflow: hidden;
+}
+.banner .b-list > li {
+  width: 1920px;
+  height: 166px;
+  float: left;
+}
+.banner .b-list > li a {
+  display: block;
+}
+.banner .b-list > li a img {
+  display: block;
+}
+.banner .num {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  font-size: 0px;
+}
+.banner .num li {
+  width: 10px;
+  height: 10px;
+  background: #888;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.banner .num .on {
+  background: #F60;
+}
+main {
+  width: 1100px;
+  margin: 40px auto 40px auto;
+}
+main .LeftNav {
+  float: left;
+  width: 260px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  background-color: white;
+  margin-right: 20px;
+  padding-bottom: 20px;
+}
+main .LeftNav > dl > dt {
+  text-align: center;
+  margin-bottom: 40px;
+}
+main .LeftNav > dl > dt > img {
+  display: block;
+  margin: 40px auto 0 auto;
+}
+main .LeftNav > dl > dt > h2 {
+  font-weight: normal;
+  margin-top: 10px;
+  font-size: 18px;
+  height: 18px;
+  line-height: 18px;
+}
+main .LeftNav > dl > dt > span {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  height: 14px;
+  line-height: 14px;
+  color: #adadad;
+}
+main .LeftNav > dl > dd {
+  margin: 0 20px 10px 20px;
+  background-color: #f3f6f8;
+  height: 36px;
+  line-height: 36px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  text-indent: 16px;
+}
+main .LeftNav > dl > dd > a {
+  display: block;
+  color: #3b3b3b;
+  font-size: 16px;
+}
+main .LeftNav > dl .active {
+  background-color: #fed900;
+}
+main .abContent {
+  float: right;
+  background-color: white;
+  width: 740px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  padding: 0 40px 40px 40px;
+}
+main .abContent .title {
+  line-height: 76px;
+  height: 76px;
+  border-bottom: 1px solid #eeeeee;
+}
+main .abContent .title > h2 {
+  float: left;
+  font-size: 22px;
+  color: #3b3b3b;
+  font-weight: normal;
+}
+main .abContent .title > span {
+  float: left;
+  font-size: 16px;
+  color: #a4a3a0;
+  margin-left: 10px;
+}
+main .abContent .screen {
+  margin: 40px auto 0 auto;
+  width: 256px;
+}
+main .abContent .screen li {
+  float: left;
+  width: 128px;
+  height: 42px;
+  text-align: center;
+  line-height: 42px;
+  background-color: #e5e5e5;
+  font-size: 18px;
+  color: #5c5c5c;
+}
+main .abContent .screen li:first-of-type {
+  -webkit-border-radius: 6px 0px 0px 6px;
+  -moz-border-radius: 6px 0px 0px 6px;
+  -ms-border-radius: 6px 0px 0px 6px;
+  -o-border-radius: 6px 0px 0px 6px;
+  border-radius: 6px 0px 0px 6px;
+}
+main .abContent .screen li:last-of-type {
+  -webkit-border-radius: 0px 6px 6px 0px;
+  -moz-border-radius: 0px 6px 6px 0px;
+  -ms-border-radius: 0px 6px 6px 0px;
+  -o-border-radius: 0px 6px 6px 0px;
+  border-radius: 0px 6px 6px 0px;
+}
+main .abContent .screen .active {
+  background-color: #fed900;
+}
+main .abContent .images {
+  width: 100%;
+}
+main .abContent .images img {
+  width: 100%;
+}
