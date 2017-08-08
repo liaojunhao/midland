@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title><%=title%></title>
     <link rel="stylesheet" href="/stylesheets/reset.css">
-    <link rel="stylesheet" href="/stylesheets/aboutStyle/culture.css">
+    <link rel="stylesheet" href="/stylesheets/aboutStyle/train.css">
 </head>
 <body>
 <%include ../include/header.html%>
@@ -26,9 +26,9 @@
             </dt>
             <dd><a href="/about">公司介绍</a></dd>
             <dd><a href="/about/course">公司历程</a></dd>
-            <dd class="active"><a href="/about/culture">企业文化</a></dd>
-            <dd><a href="">企业培训</a></dd>
-            <dd><a href="">美联风采</a></dd>
+            <dd><a href="/about/culture">企业文化</a></dd>
+            <dd class="active"><a href="/about/train">企业培训</a></dd>
+            <dd><a href="/about/elegance">美联风采</a></dd>
         </dl>
     </div>
     <!--点击导航切换内容-->
@@ -36,10 +36,22 @@
         <!--<router-view></router-view>-->
         <div class="title clearfix">
             <h2><%=title%></h2>
-            <span>Company Culture</span>
+            <span>Company Train</span>
         </div>
-        <img src="/images/culturn_bg.jpg" alt="美联物业">
-        <img src="/images/culturn_bg2.jpg" alt="美联物业">
+        <div class="content">
+            <p>
+                您将在美联体验与众不同的职业经历，在这里，您将与美联共同成长，我们将极力创造员工与美联的双赢！在美联，我们一起追逐梦想，共同开拓中国地产事业。
+            </p>
+            <ul>
+                <li>
+                    <img src="" alt="">
+                    <div>
+                        <h2>新员工培训</h2>
+                        <div>新员工培训分为公司层面和部门层面的培训，以帮助员工快速适应公司的文化。公司层面的培训包括了解公司历史，公司文化，公司规范，部门制度等内容，并且不定期地为员工提供各种素质课程。部门培训将实行导师制一对一的带领您加入一个新的集体。</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
 
     </div>
 

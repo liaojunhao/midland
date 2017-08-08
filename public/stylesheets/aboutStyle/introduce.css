@@ -101,13 +101,16 @@ main .LeftNav > dl .active {
 main .abContent {
   float: right;
   background-color: white;
-  height: 800px;
-  width: 820px;
+  width: 740px;
+  padding: 0 40px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   border-radius: 6px;
+}
+main .abContent .int_bg {
+  margin: 40px auto;
 }
 main .abContent > img {
   display: block;
@@ -117,11 +120,20 @@ main .abContent .title {
   line-height: 76px;
   height: 76px;
   border-bottom: 1px solid #eeeeee;
-  margin: 0 40px;
 }
 main .abContent .title > h2 {
   float: left;
+  font-size: 22px;
+  margin-right: 10px;
+  font-weight: normal;
 }
 main .abContent .title > span {
   float: left;
+  color: #a4a3a0;
+  font-size: 16px;
+}
+main .abContent p {
+  font-size: 14px;
+  color: #939292;
+  line-height: 24px;
 }

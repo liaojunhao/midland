@@ -126,9 +126,6 @@ main .abContent .title > span {
   color: #a4a3a0;
   margin-left: 10px;
 }
-main .abContent > img {
-  width: 100%;
-}
-main .abContent > img:first-of-type {
-  margin-top: 40px;
+main .abContent .content {
+  margin-top: 30px;
 }

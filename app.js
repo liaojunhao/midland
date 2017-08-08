@@ -12,7 +12,7 @@ let social = require('./routes/social');    // 职位列表路由
 let resume = require('./routes/resume');      // 简历路由
 let Release = require('./routes/Release');  // 发布职位路由
 let about = require('./routes/about');      // 公司介绍路由
-// let welfare = require('./routes/welfare');  // 福利薪酬路由
+let welfare = require('./routes/welfare');  // 福利薪酬路由
 let contact = require('./routes/contact');  // 联系我们路由
 
 let db = require('./db')//引入数据库操作模块
@@ -64,7 +64,7 @@ app.use('/social', social);     // 指定职位列表路由
 app.use('/resume', resume);     // 指定简历路由
 app.use('/Release', Release);   // 指定发布简历路由
 app.use('/about', about);       // 指定关于我们路由
-// app.use('/welfare', welfare);   // 指定关于我们路由
+app.use('/welfare', welfare);   // 指定福利薪酬路由
 app.use('/contact',contact);     // 指定联系我们路由
 
 // 返回404错误页面

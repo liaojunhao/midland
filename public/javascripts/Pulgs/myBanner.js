@@ -120,7 +120,8 @@
     var settings = {
         automatic: true,  //设置是否自动滚动,如果是false就要通过num或者左右控件来切换左右滚动
         control: true,    //设置是否显示左右控件
-        Time:2000         //设置banner过度时间
+        Time:2000,         //设置banner过度时间
+        screen: true      // 设置是不是全屏true 为全屏
     };
 
 })(jQuery);
